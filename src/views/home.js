@@ -143,7 +143,7 @@ const Home = () => {
               <FadeInSection>
                 <img src={graph3} className="graph3 rellax" />
               </FadeInSection>
-              <Parallax speed={2}>
+              <Parallax speed={4}>
                 <img src={phone} className="phone" speed={-2} />
               </Parallax>
               <FadeInSection>
@@ -290,12 +290,16 @@ const Home = () => {
               </FadeInSection>
             </Col>
             <Col md={6} className="mb-md-5 mb-4 text-center">
-              <img src={dashboard} className="w-100 dashboard" />
+              <FadeInSection right={true}>
+                <img src={dashboard} className="w-100 dashboard" />
+              </FadeInSection>
             </Col>
           </Row>
           <Row className="justify-content-center gridRow">
             <Col md={6} className="mb-md-5 mb-4 text-center">
-              <img src={graph} className="w-100 graph" />
+              <FadeInSection left={true}>
+                <img src={graph} className="w-100 graph" />
+              </FadeInSection>
             </Col>
             <Col md={5} className="mb-md-5 mb-4 pe-5">
               <FadeInSection>
@@ -331,12 +335,16 @@ const Home = () => {
               </FadeInSection>
             </Col>
             <Col md={6} className="mb-md-5 mb-4 text-center">
-              <img src={coin3} className="w-100 coin-image" />
+              <FadeInSection right={true}>
+                <img src={coin3} className="w-100 coin-image" />
+              </FadeInSection>
             </Col>
           </Row>
           <Row className="justify-content-between align-items-center gridRow">
             <Col md={6} className="mb-md-5 mb-4 text-center">
-              <img src={graph} className="w-100 graph" />
+              <FadeInSection left={true}>
+                <img src={graph} className="w-100 graph px-4" />
+              </FadeInSection>
             </Col>
             <Col md={5} className="mb-md-5 mb-4">
               <FadeInSection>

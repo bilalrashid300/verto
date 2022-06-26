@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect } from 'react';
 
 const FadeInSection = ({
-  children,
+  children, left, right
 }) => {
   const domRef = useRef();
 
@@ -22,7 +22,7 @@ const FadeInSection = ({
     // return () => observer.unobserve(domRef?.current);
   }, [domRef]);
 
-  return (<div ref={ domRef } className={`visible ${isVisible ? 'active' : ''}`}>{ children }</div>);
+  return (<div ref={ domRef } className={`${left ? 'visible-left' : right ? 'visible-right' : 'visible'} ${isVisible ? 'active' : ''}`}>{ children }</div>);
 };
 
 export default FadeInSection;

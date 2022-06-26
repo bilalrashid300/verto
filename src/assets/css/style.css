@@ -624,6 +624,28 @@ footer .social .iconWrapper img {
   opacity: 1; 
 }
 
+.visible-left {
+  transition: all 1s ease-in-out;
+  transform: translateX(-30px);
+  opacity: 0;
+}
+
+.visible-left.active {
+  transform: translateX(0);
+  opacity: 1; 
+}
+
+.visible-right {
+  transition: all 1s ease-in-out;
+  transform: translateX(30px);
+  opacity: 0;
+}
+
+.visible-right.active {
+  transform: translateX(0);
+  opacity: 1; 
+}
+
 .ocean {
   position: relative;
   overflow: hidden;
