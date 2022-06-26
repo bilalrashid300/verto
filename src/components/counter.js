@@ -6,13 +6,23 @@ import Countdown from "react-countdown";
 const Completionist = () => <span>You are good to go!</span>;
 
 const previewDigit = (digit) => {
-  return Array.from(String(digit)).map((number, index) => {
+  const digitComp = Array.from(String(digit)).map((number, index) => {
     return (
       <div className="singleDigit" key={index}>
         {number}
       </div>
     );
   });
+  if (Array.from(String(digit))?.length > 1) {
+    return digitComp;
+  } else {
+    return (
+      <>
+        <div className="singleDigit">0</div>
+        {digitComp}
+      </>
+    );
+  }
 };
 
 const renderer = ({ days, hours, minutes, seconds, completed }) => {

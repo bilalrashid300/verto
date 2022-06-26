@@ -790,10 +790,17 @@ footer .social .iconWrapper img {
     flex-wrap: wrap;
   }
   .digitList > div {
-    width: calc(50% - 30px);
+    width: calc(50% - 15px);
   }
   .digitList .dot {
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); */
+    margin-left: 10px;
+  }
+  .digitBox {
+    justify-content: center;
+  }
+  .singleDigit:last-child{
+    margin-right: 0;
   }
   .singleDigit {
     font-size: 2rem;
@@ -884,6 +891,9 @@ footer .social .iconWrapper img {
     font-size: 1.1rem;
   }
   .coin-right {
+    display: none;
+  }
+  .digitList .dot:nth-child(4) {
     display: none;
   }
 
