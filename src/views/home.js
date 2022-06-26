@@ -167,7 +167,7 @@ const Home = () => {
                 Presale
               </Button>
             </Col>
-            <Col md={7} className="mb-5">
+            <Col md={7} xs={10} className="mb-5">
               <FadeInSection>
                 <CustomCard
                   img={card1}
@@ -185,7 +185,7 @@ const Home = () => {
             </Col>
             <Col md={5}></Col>
             <Col md={5}></Col>
-            <Col md={7} className="justify-self-end">
+            <Col md={7} xs={10} className="justify-self-end">
               <FadeInSection>
                 <CustomCard
                   img={card2}
@@ -218,7 +218,7 @@ const Home = () => {
               <img src={coin} className="coin1" />
             </Col>
             <Col md={6} className="z-10 mt-md-5">
-              <img src={mobile} className="w-100 pe-5" />
+              <img src={mobile} className="w-100 pe-5 ps-md-0 ps-5  mb-5 mb-md-0" />
             </Col>
             <Col md={6} className="z-10 mt-md-5">
               {whyContentListing}
@@ -227,6 +227,7 @@ const Home = () => {
         </Container>
         <img src={coin} className="coin2" />
         <img src={coinHalf} className="coin3" />
+        <img src={coin} className="coin3 coin-mb" />
       </div>
       <div id="howto" className="banner verto">
         <Container>
@@ -240,10 +241,10 @@ const Home = () => {
             </Col>
             <Col
               md={5}
-              className="p-rel pe-5 d-flex justify-content-center align-items-end"
+              className="p-rel pe-md-5 ps-md-3 px-3 d-flex justify-content-center align-items-end"
             >
               <img src={dollarCoin} className="verto-coin" />
-              <img src={girl} className="w-100" />
+              <img src={girl} className="w-100 mt-md-0 mt-5" />
             </Col>
             <Col md={7} className="mb-md-5">
               {vertoContentListing}
@@ -296,12 +297,12 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="justify-content-center gridRow">
-            <Col md={6} className="mb-md-5 mb-4 text-center">
+            <Col md={6} className="mb-md-5 mb-4 text-center order-2 order-md-1">
               <FadeInSection left={true}>
                 <img src={graph} className="w-100 graph" />
               </FadeInSection>
             </Col>
-            <Col md={5} className="mb-md-5 mb-4 pe-5">
+            <Col md={5} className="mb-md-5 mb-4 pe-5 order-1 order-md-2">
               <FadeInSection>
                 <p className="fw-7">
                   Our team will ensure that blockchain technology's essence and
@@ -341,12 +342,12 @@ const Home = () => {
             </Col>
           </Row>
           <Row className="justify-content-between align-items-center gridRow">
-            <Col md={6} className="mb-md-5 mb-4 text-center">
+            <Col md={6} className="mb-md-5 mb-4 text-center order-2 order-md-1">
               <FadeInSection left={true}>
                 <img src={graph} className="w-100 graph px-4" />
               </FadeInSection>
             </Col>
-            <Col md={5} className="mb-md-5 mb-4">
+            <Col md={5} className="mb-md-5 mb-4 order-1 order-md-2">
               <FadeInSection>
                 <h2 className="mb-5">Our Vision</h2>
               </FadeInSection>
@@ -365,8 +366,8 @@ const Home = () => {
           </Row>
         </Container>
       </div>
-      <div className="tech my-5">
-        <img src={tech} className="w-100 px-5" />
+      <div className="tech my-md-5 mb-5">
+        <img src={tech} className="w-100 px-md-5 mb-5 mb-md-0" />
       </div>
       <div className="my-5">
         <Container>
@@ -375,7 +376,7 @@ const Home = () => {
               <img src={coin} className="coin" />
               <h2 className="heading-lg mb-5">Tokenomics</h2>
               <FadeInSection>
-                <p className="small mb-5 px-5">
+                <p className="small mb-5 px-md-5 px-4">
                   The official utility token of VertoChain is $VERT, as it
                   serves as the ticket to accessing the features of VertoChain.
                   Only holders of $VERT tokens will be considered for special
@@ -389,7 +390,7 @@ const Home = () => {
             </Col>
             <Col md={6}>
               <FadeInSection>
-                <p>
+                <p className="px-md-0 px-4 mb-5 mb-md-3">
                   We understand that our users and several early adopters may be
                   first-time users of DeFi services; this is why extra caution
                   and security measures will be put in place to forestall hack
@@ -404,7 +405,7 @@ const Home = () => {
             <Col md={6} className="coinWrapperLg">
               <img src={coin} className="coin" />
               <FadeInSection>
-                <p>
+                <p className="px-md-0 px-4">
                   Leveraging BSC’s PoSA standard, transaction fees will be
                   nominal. The deflationary token model is employed here to
                   create scarcity of the $VERT tokens. If the token demand
@@ -431,7 +432,7 @@ const Home = () => {
                 </FadeInSection>
               </Col>
               <Col md={4} className="p-rel">
-                <img src={lock} className="w-100" />
+                <img src={lock} className="w-100 px-md-0 px-5" />
                 <img src={coin} className="coin" />
               </Col>
               <Col md={7} className="ps-md-5">

@@ -3,6 +3,7 @@
 
 :root {
   --font-size: 17px;
+  --line-height: 1.8;
   --font-family: "Inter", sans-serif;
   --font-family-heading: "Manrope", sans-serif;
 }
@@ -10,6 +11,7 @@
 body {
   font-size: var(--font-size);
   font-family: var(--font-family);
+  line-height: var(--line-height);
 }
 
 h1,
@@ -29,8 +31,8 @@ h2 {
 .navbar-nav .nav-link {
   font-size: 0.875rem;
   font-weight: 600;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
   color: #000;
 }
 
@@ -224,7 +226,7 @@ h2 {
   /* overflow: hidden; */
 }
 
-.why .curve{
+.why .curve {
   position: absolute;
   top: -43px;
   left: 0;
@@ -237,7 +239,7 @@ h2 {
 
 .greyBox {
   padding: 1rem;
-  background-color: #495058;
+  background-color: #ffffff20;
   display: flex;
   border-radius: 15px;
   transition: all 0.3s ease-in-out;
@@ -493,9 +495,10 @@ h2 {
 }
 
 .accordion-item button {
-  border-radius: 10px !important;
+  border-radius: 8px !important;
   box-shadow: 0 0 4px 0 #00000025;
-  color: #626262;
+  color: #111111;
+  padding: 1.25rem 1.5rem;
 }
 
 .accordion-button::after {
@@ -535,7 +538,7 @@ footer {
   padding-top: 30px;
   color: #fff;
   text-align: center;
-  background: #7235CD;
+  background: #7235cd;
   /* background-image: url(../images/footer.png); */
   background-position: top;
   background-repeat: no-repeat;
@@ -621,7 +624,7 @@ footer .social .iconWrapper img {
 
 .visible.active {
   transform: translateY(0);
-  opacity: 1; 
+  opacity: 1;
 }
 
 .visible-left {
@@ -632,7 +635,7 @@ footer .social .iconWrapper img {
 
 .visible-left.active {
   transform: translateX(0);
-  opacity: 1; 
+  opacity: 1;
 }
 
 .visible-right {
@@ -643,7 +646,7 @@ footer .social .iconWrapper img {
 
 .visible-right.active {
   transform: translateX(0);
-  opacity: 1; 
+  opacity: 1;
 }
 
 .ocean {
@@ -677,12 +680,21 @@ footer .social .iconWrapper img {
   opacity: 0.5;
 }
 
-@keyframes wave {
-    0% {transform: translateX(0);}
-    50% {transform: translateX(-25%);}
-    100% {transform: translateX(-50%);}
+.coin-mb {
+  display: none;
 }
 
+@keyframes wave {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 @keyframes upDown {
   0% {
@@ -720,4 +732,159 @@ footer .social .iconWrapper img {
     transform: translateY(0px);
   }
   /* 100% {bottom: -110px;} */
+}
+
+@media (max-width: 786px) {
+  .banner {
+    min-height: 100vh;
+    padding: 80px 0px 100px 0px;
+  }
+  .top {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+    padding: 80px 0px 0px 0px;
+  }
+  .bottom {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .counterWrapper {
+    margin-top: 0;
+  }
+  .customCard {
+    flex-direction: column;
+  }
+  .customCard p {
+    order: 1;
+    font-weight: 700;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+  .customCard img {
+    order: 2;
+    max-width: 100%;
+  }
+  .bottom .col-10:last-child {
+    justify-self: flex-end;
+    margin-left: auto;
+  }
+  .bannerImg {
+    margin-top: 180px;
+  }
+  .why .curve {
+    top: -14px;
+    background-size: 100%;
+  }
+  .heading-lg {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .coin1 {
+    width: 200px;
+    left: unset;
+    right: 0;
+    top: -100px;
+  }
+  .digitList{
+    flex-wrap: wrap;
+  }
+  .digitList > div {
+    width: calc(50% - 30px);
+  }
+  .digitList .dot {
+    transform: translateY(-10px);
+  }
+  .singleDigit {
+    font-size: 2rem;
+    width: 68px;
+  }
+  .verto .greyBox:nth-child(odd),
+  .verto .greyBox:nth-child(even) {
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+  }
+  .verto .greyBox img {
+    margin-right: 0;
+    width: 70px;
+  }
+  .greyBox .title {
+    font-size: 1.5rem;
+    padding: 0 0.25rem;
+  }
+  .greyBox .desc {
+    font-size: 1rem;
+  }
+  .coin2 {
+    bottom: unset;
+    top: 50%;
+    left: -113px;
+    width: 230px;
+  }
+  .coin3 {
+    display: none;
+  }
+  .coin-mb {
+    display: block;
+    bottom: -25px;
+    top: unset;
+    left: calc(50% - 26px);
+  }
+  .verto-coin {
+    top: -209px;
+    left: 60px;
+  }
+  .gridRow {
+    margin: 2rem 0 5rem 0;
+  }
+  .gridRow img {
+    margin: 3rem 0;
+  }
+  .coin-image {
+    max-width: 190px;
+    margin: auto;
+  }
+  .about {
+    padding-bottom: 0;
+  }
+  .coinWrapperSm .coin {
+    display: none;
+  }
+  .small {
+    font-size: inherit;
+  }
+  .coinWrapperLg .coin {
+    display: none;
+  }
+  .road-map {
+    background-size: 264%;
+    padding-top: 0;
+  }
+  .customTabs {
+    width: calc(100% - 30px);
+    margin: auto;
+    margin-top: 3rem;
+  }
+  .customTabs .tab-content {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-top: 2rem;
+  }
+  .margin-100 {
+    margin-top: 50px;
+  }
+  .accordion-body {
+    font-size: 1rem;
+  }
+
+  .accordion-button {
+    font-size: 1.1rem;
+  }
+  .coin-right {
+    display: none;
+  }
+
 }
