@@ -40,6 +40,10 @@ h2 {
   color: #000;
 }
 
+.navbar-light .navbar-nav .nav-link.active {
+  color: rgba(10, 10, 13, 0.4) !important;
+}
+
 .appLogo {
   height: 50px;
 }
@@ -735,6 +739,12 @@ footer .social .iconWrapper img {
 }
 
 @media (max-width: 786px) {
+  .appLogo {
+    height: 35px;
+  }
+  .top {
+    margin-top: 65px;
+  }
   .banner {
     min-height: 100vh;
     padding: 80px 0px 100px 0px;
@@ -895,6 +905,18 @@ footer .social .iconWrapper img {
   }
   .digitList .dot:nth-child(4) {
     display: none;
+  }
+  .tech {
+    overflow: hidden;
+  }
+  .navbar {
+    background-color: #fff !important;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
   }
 
 }
