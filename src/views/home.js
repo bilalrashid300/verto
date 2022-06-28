@@ -218,7 +218,10 @@ const Home = () => {
               <img src={coin} className="coin1" />
             </Col>
             <Col md={6} className="z-10 mt-md-5">
-              <img src={mobile} className="w-100 pe-5 ps-md-0 ps-5  mb-5 mb-md-0" />
+              <img
+                src={mobile}
+                className="w-100 pe-5 ps-md-0 ps-5  mb-5 mb-md-0"
+              />
             </Col>
             <Col md={6} className="z-10 mt-md-5">
               {whyContentListing}
@@ -469,26 +472,31 @@ const Home = () => {
                           </Tab.Pane>
                           <Tab.Pane eventKey="second">
                             <ul>
-                              <li>Team Development</li>
-                              <li>Website Creation</li>
-                              <li>White Paper Development</li>
-                              <li>Initiation Of Project</li>
+                              <li>Conceptual development of the platform</li>
+                              <li>Community development</li>
+                              <li>
+                                The initial sale of tokens and private
+                                fundraising
+                              </li>
+                              <li>Incentive for users</li>
+                              <li>Partnership creation</li>
                             </ul>
                           </Tab.Pane>
                           <Tab.Pane eventKey="third">
                             <ul>
-                              <li>Team Development</li>
-                              <li>Website Creation</li>
-                              <li>White Paper Development</li>
-                              <li>Initiation Of Project</li>
+                              <li>Chainlink partnership</li>
+                              <li>End of token Presales</li>
+                              <li>Launch on Pancakeswap</li>
                             </ul>
                           </Tab.Pane>
                           <Tab.Pane eventKey="forth">
                             <ul>
-                              <li>Team Development</li>
-                              <li>Website Creation</li>
-                              <li>White Paper Development</li>
-                              <li>Initiation Of Project</li>
+                              <li>
+                                Multichain development, testing and launch
+                              </li>
+                              <li>Token listings and Binance launch</li>
+                              <li>Staking of tokens</li>
+                              <li>Code audit, appraisal, and documentation</li>
                             </ul>
                           </Tab.Pane>
                         </Tab.Content>
@@ -518,15 +526,10 @@ const Home = () => {
                       <Accordion.Item eventKey="0">
                         <Accordion.Header>What is VertoChain?</Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          Vertochain is a decentralized multichain protocol that
+                          allows users to swap directly with integrated
+                          multi-blockchain networks which include Binance,
+                          Ethereum, Avalanche, Tezoz, and Solana.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="1">
@@ -534,15 +537,9 @@ const Home = () => {
                           Is VertoChain a decentralized platform?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          Yes, VertoChain is a decentralized platform which
+                          allows you to have full control over your funds and
+                          transact to any Bep-20 supported wallet.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="2">
@@ -550,15 +547,8 @@ const Home = () => {
                           Where can you buy $VERT Coin?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          $VERT will be available on many of the major DEXs once
+                          our presale has ended.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="3">
@@ -566,15 +556,8 @@ const Home = () => {
                           How can I sell my $VERT coin?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          You can sell your coin on any of the decentralized or
+                          centralized exchanges listed here.
                         </Accordion.Body>
                       </Accordion.Item>
                     </Col>
@@ -584,15 +567,8 @@ const Home = () => {
                           Is VertoChain working on having its own blockchain?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          Definitely. Works are currently ongoing to achieve
+                          that aim.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="5">
@@ -600,15 +576,9 @@ const Home = () => {
                           Is VertoChain Legal?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          VertoChain is tradeable in any country where crypto is
+                          legal. You can check the list to check if your country
+                          is among the supported countries.
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="6">
@@ -616,15 +586,11 @@ const Home = () => {
                           What are the key features of VertoChain?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          <ul>
+                            <li>Multi-Chain network supported</li>
+                            <li>Comfortability</li>
+                            <li>Transparency</li>
+                          </ul>
                         </Accordion.Body>
                       </Accordion.Item>
                       <Accordion.Item eventKey="7">
@@ -632,15 +598,7 @@ const Home = () => {
                           How do I get started on VertoChain?
                         </Accordion.Header>
                         <Accordion.Body>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco laboris nisi ut aliquip
-                          ex ea commodo consequat. Duis aute irure dolor in
-                          reprehenderit in voluptate velit esse cillum dolore eu
-                          fugiat nulla pariatur. Excepteur sint occaecat
-                          cupidatat non proident, sunt in culpa qui officia
-                          deserunt mollit anim id est laborum.
+                          Enter our presale and purchase your $VERT Tokens.
                         </Accordion.Body>
                       </Accordion.Item>
                     </Col>
