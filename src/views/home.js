@@ -36,6 +36,10 @@ import phone from "../assets/images/phone.png";
 import graph2 from "../assets/images/graph2.png";
 import graph3 from "../assets/images/graph3.png";
 import coinHalf from "../assets/images/coin-split.png";
+import illus1 from "../assets/images/illus1.png";
+import illus2 from "../assets/images/illus2.png";
+import illus3 from "../assets/images/illus3.png";
+import illus4 from "../assets/images/illus4.png";
 
 const Home = () => {
   const whyContent = [
@@ -295,17 +299,18 @@ const Home = () => {
             </Col>
             <Col md={6} className="mb-md-5 mb-4 text-center">
               <FadeInSection right={true}>
-                <img src={dashboard} className="w-100 dashboard" />
+                <img src={illus1} className="w-100 graph" />
               </FadeInSection>
             </Col>
           </Row>
           <Row className="justify-content-center gridRow">
-            <Col md={6} className="mb-md-5 mb-4 text-center order-2 order-md-1">
+            <Col md={5} className="mb-md-5 mb-4 text-center order-2 order-md-1">
               <FadeInSection left={true}>
-                <img src={graph} className="w-100 graph" />
+                <img src={illus2} className="w-100" />
               </FadeInSection>
             </Col>
-            <Col md={5} className="mb-md-5 mb-4 pe-5 order-1 order-md-2">
+            <Col md={1} className="order-md-2"></Col>
+            <Col md={5} className="mb-md-5 mb-4 pe-5 order-1 order-md-3">
               <FadeInSection>
                 <p className="fw-7">
                   Our team will ensure that blockchain technology's essence and
@@ -340,14 +345,14 @@ const Home = () => {
             </Col>
             <Col md={6} className="mb-md-5 mb-4 text-center">
               <FadeInSection right={true}>
-                <img src={coin3} className="w-100 coin-image" />
+                <img src={illus3} className="w-100" />
               </FadeInSection>
             </Col>
           </Row>
           <Row className="justify-content-between align-items-center gridRow">
             <Col md={6} className="mb-md-5 mb-4 text-center order-2 order-md-1">
               <FadeInSection left={true}>
-                <img src={graph} className="w-100 graph px-4" />
+                <img src={illus4} className="w-100 px-4" />
               </FadeInSection>
             </Col>
             <Col md={5} className="mb-md-5 mb-4 order-1 order-md-2">
