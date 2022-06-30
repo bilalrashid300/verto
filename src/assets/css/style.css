@@ -689,6 +689,15 @@ footer .social .iconWrapper img {
   display: none;
 }
 
+[class*="ReactFlagsSelect-module_label__"] {
+  font-size: 0.856rem;
+  font-weight: 700;
+}
+
+[class*="ReactFlagsSelect-module_selectBtn__"] {
+  border: none;
+}
+
 @keyframes wave {
   0% {
     transform: translateX(0);
