@@ -18,6 +18,7 @@ const Presale = () => {
             <FadeInSection>
               <Counter />
             </FadeInSection>
+            <p className="mt-4">Sign up for the presale and receive 10% extra $VERT tokens on your first purchase</p>
             <Button variant="dark" className="mt-4">
               Presale
             </Button>
